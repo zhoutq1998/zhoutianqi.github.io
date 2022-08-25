@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>ProjectEuler501</title>
+    <link href="/2022/08/25/ProjectEuler501/"/>
+    <url>/2022/08/25/ProjectEuler501/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>24的八个约数是1、2、3、4、6、8、12和24。<br />在不超过100的数中有十个数恰好有八个约数，分别是24、30、40、42、54、56、66、70、78和88。<br />在不超过n的数中，记有f(n)个数恰好有八个约数。<br />已知f(100) = 10，f(1000) = 180以及f(106) = 224427。<br />求f(1012)。</p>          </div>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>韦伯望远镜下的土星</title>
     <link href="/2022/08/23/%E9%9F%A6%E4%BC%AF%E6%9C%9B%E8%BF%9C%E9%95%9C%E4%B8%8B%E7%9A%84%E5%9C%9F%E6%98%9F/"/>
     <url>/2022/08/23/%E9%9F%A6%E4%BC%AF%E6%9C%9B%E8%BF%9C%E9%95%9C%E4%B8%8B%E7%9A%84%E5%9C%9F%E6%98%9F/</url>
