@@ -8,7 +8,7 @@
     <link href="/2022/08/25/ProjectEuler501/"/>
     <url>/2022/08/25/ProjectEuler501/</url>
     
-    <content type="html"><![CDATA[<div class="note note-success">            <p>24的八个约数是1、2、3、4、6、8、12和24。在不超过100的数中有十个数恰好有八个约数，分别是24、30、40、42、54、56、66、70、78和88。在不超过n的数中，记有f(n)个数恰好有八个约数。 已知f(100) = 10，f(1000) =180以及f(106) = 224427。 求f(1012)。</p>          </div><p>根据素数分解定理，每一个自然数<spanclass="math inline">\(n\)</span>都能唯一分解为素数乘积 <spanclass="math display">\[n = p_1^{a_1}p_2^{a_2}...p_k^{a_k}\]</span></p><p>显然，<span class="math inline">\(n\)</span>的约数有<spanclass="math inline">\((a_1+1)(a_2+1)...(a_k+1)\)</span>个，那么对于8个约数的情况，可以反推出<spanclass="math inline">\(n\)</span>必然形如 <span class="math display">\[p_1p_2p_3 \\\\p_1^3p_2 \\\\p_1^7\]</span></p>]]></content>
+    <content type="html"><![CDATA[<div class="note note-success">            <p>24的八个约数是1、2、3、4、6、8、12和24。在不超过100的数中有十个数恰好有八个约数，分别是24、30、40、42、54、56、66、70、78和88。在不超过n的数中，记有f(n)个数恰好有八个约数。 已知f(100) = 10，f(1000) =180以及f(106) = 224427。 求f(1012)。</p>          </div><p>根据素数分解定理，每一个自然数<spanclass="math inline">\(n\)</span>都能唯一分解为素数乘积 <spanclass="math display">\[n = p_1^{a_1}p_2^{a_2}...p_k^{a_k}\]</span></p><p>显然，<span class="math inline">\(n\)</span>的约数有<spanclass="math inline">\((a_1+1)(a_2+1)...(a_k+1)\)</span>个，那么对于8个约数的情况，可以反推出<spanclass="math inline">\(n\)</span>必然形如 <span class="math display">\[\begin{align}p_1p_2p_3 \\\\p_1^3p_2 \\\\p_1^7\end{align}\]</span></p>]]></content>
     
     
     
