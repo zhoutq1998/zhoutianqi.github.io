@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Meissel-Lehmer算法</title>
+    <link href="/2022/08/26/Meissel-Lehmer%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/08/26/Meissel-Lehmer%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<p><ahref="https://www.ams.org/journals/mcom/1985-44-170/S0025-5718-1985-0777285-5/S0025-5718-1985-0777285-5.pdf">算法来自于这篇论文</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>数论</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ProjectEuler501</title>
     <link href="/2022/08/25/ProjectEuler501/"/>
     <url>/2022/08/25/ProjectEuler501/</url>
