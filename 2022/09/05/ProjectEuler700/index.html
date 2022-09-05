@@ -16,23 +16,21 @@
   <meta name="author" content="周天麒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="\(\pi(n)\)表示小于等于\(n\)的正整数中有多少是质数，最基础的欧式线性筛可以 算法来自于这篇论文">
+    <meta name="description" content="莱昂哈德·欧拉出生于1707年4月15日，所以让我们考虑以下序列： \[1504170715041707nmod4503599627370517\]该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。如，序列的第一项是1504170715041707，这是第一枚欧拉币；第二项是3008341430083414，因为它大于1504170715041">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Meissel-Lehmer算法">
-<meta property="og:url" content="https://zhoutq1998.github.io/2022/08/26/Meissel-Lehmer%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:title" content="ProjectEuler700">
+<meta property="og:url" content="https://zhoutq1998.github.io/2022/09/05/ProjectEuler700/index.html">
 <meta property="og:site_name" content="关注永雏塔菲喵">
-<meta property="og:description" content="\(\pi(n)\)表示小于等于\(n\)的正整数中有多少是质数，最基础的欧式线性筛可以 算法来自于这篇论文">
+<meta property="og:description" content="莱昂哈德·欧拉出生于1707年4月15日，所以让我们考虑以下序列： \[1504170715041707nmod4503599627370517\]该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。如，序列的第一项是1504170715041707，这是第一枚欧拉币；第二项是3008341430083414，因为它大于1504170715041">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zhoutq1998.github.io/img/Meissel-Lehmer.jpeg">
-<meta property="article:published_time" content="2022-08-26T06:54:23.000Z">
-<meta property="article:modified_time" content="2022-08-26T10:01:28.603Z">
+<meta property="article:published_time" content="2022-09-05T09:48:45.000Z">
+<meta property="article:modified_time" content="2022-09-05T09:50:59.284Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://zhoutq1998.github.io/img/Meissel-Lehmer.jpeg">
   
   
   
-  <title>Meissel-Lehmer算法 - 关注永雏塔菲喵</title>
+  <title>ProjectEuler700 - 关注永雏塔菲喵</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -218,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Meissel-Lehmer算法"></span>
+            <span id="subtitle" data-typed-text="ProjectEuler700"></span>
           
         </div>
 
@@ -229,8 +227,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-26 14:54" pubdate>
-          2022年8月26日 下午
+        <time datetime="2022-09-05 17:48" pubdate>
+          2022年9月5日 下午
         </time>
       </span>
     
@@ -241,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          53 字
+          276 字
         
       </span>
     
@@ -252,7 +250,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -298,15 +296,14 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Meissel-Lehmer算法</h1>
+            <h1 style="display: none">ProjectEuler700</h1>
             
             
               <div class="markdown-body">
                 
-                <p><span class="math inline">\(\pi(n)\)</span>表示小于等于<span
-class="math inline">\(n\)</span>的正整数中有多少是质数，最基础的欧式线性筛可以
-<a
-target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-170/S0025-5718-1985-0777285-5/S0025-5718-1985-0777285-5.pdf">算法来自于这篇论文</a></p>
+                <div class="note note-success">
+            <p>莱昂哈德·欧拉出生于1707年4月15日，所以让我们考虑以下序列： <spanclass="math display">\[1504170715041707nmod4503599627370517\]</span>该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。如，序列的第一项是1504170715041707，这是第一枚欧拉币；第二项是3008341430083414，因为它大于1504170715041707，所以它不是欧拉币。序列的第三项是8912517754604，比第一项要小，因此是一枚新的欧拉币。因此，前两枚欧拉币之和为1513083232796311。求所有欧拉币之和。</p>
+          </div>
 
                 
               </div>
@@ -325,7 +322,7 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%95%B0%E8%AE%BA/" class="category-chain-item">数论</a>
+  <a href="/categories/%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92/" class="category-chain-item">欧拉计划</a>
   
   
 
@@ -345,8 +342,8 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Meissel-Lehmer算法</div>
-      <div>https://zhoutq1998.github.io/2022/08/26/Meissel-Lehmer算法/</div>
+      <div>ProjectEuler700</div>
+      <div>https://zhoutq1998.github.io/2022/09/05/ProjectEuler700/</div>
     </div>
     <div class="license-meta">
       
@@ -358,7 +355,7 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月26日</div>
+          <div>2022年9月5日</div>
         </div>
       
       
@@ -388,18 +385,12 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/05/ProjectEuler700/" title="ProjectEuler700">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ProjectEuler700</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/25/ProjectEuler501/" title="ProjectEuler501">
-                        <span class="hidden-mobile">ProjectEuler501</span>
+                      <a href="/2022/08/26/Meissel-Lehmer%E7%AE%97%E6%B3%95/" title="Meissel-Lehmer算法">
+                        <span class="hidden-mobile">Meissel-Lehmer算法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -481,6 +472,12 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -672,6 +669,40 @@ target="_blank" rel="noopener" href="https://www.ams.org/journals/mcom/1985-44-1
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.1/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
