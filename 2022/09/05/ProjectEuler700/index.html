@@ -24,7 +24,7 @@
 <meta property="og:description" content="莱昂哈德·欧拉出生于1707年4月15日，所以让我们考虑以下序列： \(1504170715041707n\mod 4503599627370517\)该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。如，序列的第一项是1504170715041707，这是第一枚欧拉币；第二项是3008341430083414，因为它大于15041707150">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-05T09:48:45.000Z">
-<meta property="article:modified_time" content="2022-09-06T09:20:18.731Z">
+<meta property="article:modified_time" content="2022-09-06T09:38:28.287Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          820 字
+          891 字
         
       </span>
     
@@ -250,7 +250,7 @@
         
         
         
-          7 分钟
+          8 分钟
         
       </span>
     
@@ -305,11 +305,16 @@
             <p>莱昂哈德·欧拉出生于1707年4月15日，所以让我们考虑以下序列： <spanclass="math inline">\(1504170715041707n\mod 4503599627370517\)</span>该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。如，序列的第一项是1504170715041707，这是第一枚欧拉币；第二项是3008341430083414，因为它大于1504170715041707，所以它不是欧拉币。序列的第三项是8912517754604，比第一项要小，因此是一枚新的欧拉币。因此，前两枚欧拉币之和为1513083232796311。求所有欧拉币之和。</p>
           </div>
 <p>为书写方便，记<span class="math inline">\(a=1504170715041707,
-b=4503599627370517\)</span></p>
-<p>设欧拉币为<span class="math inline">\(c = an\mod
-b\)</span>，所以可以写成<span class="math inline">\(c = an -
-bm\)</span>的形式，因此可以通过辗转相除法求出每一个欧拉币，<span
-class="math inline">\(c_0=a\)</span>。注意<span
+b=4503599627370517，c_0=a\)</span>，第0个欧拉币是<span
+class="math inline">\(a\)</span>。</p>
+<p>对于第一个欧拉币，有<span class="math inline">\(c_1 = an_1 -
+b\)</span>，<span class="math inline">\(n_1\)</span>是满足<span
+class="math inline">\(an &gt;
+b\)</span>的最小整数，出现下一个欧拉币<span
+class="math inline">\(c_2\)</span>是当有若干个<span
+class="math inline">\(c_1\)</span>之和超过<span
+class="math inline">\(a\)</span>之后，可以以此类推下去。</p>
+<p>因此通过辗转相除法可以求出每一个欧拉币。注意<span
 class="math inline">\(c\)</span>是<span
 class="math inline">\(an\)</span>比<span
 class="math inline">\(bm\)</span>大的部分，所以要对<span
@@ -330,7 +335,7 @@ c_k\)</span>之和即为所求。再由<span class="math inline">\(-c_{k-2} =
 -c_{k-1}n_k+c_k\)</span>可知 <span class="math display">\[
 c_k = -c_{k-2} \mod c_{k-1}
 \]</span></p>
-<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-gunoarl7pze4cz"></i><span>python</span><div class="collapse" id="collapse-gunoarl7pze4cz"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>	c = <span class="hljs-number">1504170715041707</span><br>	nc = -<span class="hljs-number">4503599627370517</span> % <span class="hljs-number">1504170715041707</span><br>	res = c + nc<br>	<span class="hljs-keyword">while</span> nc &gt; <span class="hljs-number">0</span>:<br>		c, nc = nc, (-c)%nc<br>		res += nc<br>	<span class="hljs-keyword">return</span> nc<br></code></pre></td></tr></table></div></figure>
+<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-9m8fudl7q01lxv"></i><span>python</span><div class="collapse" id="collapse-9m8fudl7q01lxv"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>	c = <span class="hljs-number">1504170715041707</span><br>	nc = -<span class="hljs-number">4503599627370517</span> % <span class="hljs-number">1504170715041707</span><br>	res = c + nc<br>	<span class="hljs-keyword">while</span> nc &gt; <span class="hljs-number">0</span>:<br>		c, nc = nc, (-c)%nc<br>		res += nc<br>	<span class="hljs-keyword">return</span> nc<br></code></pre></td></tr></table></div></figure>
 
                 
               </div>
