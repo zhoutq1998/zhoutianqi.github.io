@@ -16,21 +16,21 @@
   <meta name="author" content="周天麒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^{6972593}−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^{7830457}+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
+    <meta name="description" content="{ % note success % } 如果我们将小于10的所有是3或5倍数的自然数列出来，我们得到3，5，6和9，它们的和是23。与之类似，计算1000以下所有是3或5的倍数的自然数的和。 { % endnote % } python123456def solution():    res &#x3D; 334 * 333 &#x2F; 2 * 3 + 200 * 199 &#x2F; 2 * 5 - 67 * 66 &#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ProjectEuler097">
-<meta property="og:url" content="https://zhoutq1998.github.io/2022/09/06/ProjectEuler097/index.html">
+<meta property="og:title" content="ProjectEuler001">
+<meta property="og:url" content="https://zhoutq1998.github.io/2022/09/06/ProjectEuler001/index.html">
 <meta property="og:site_name" content="关注永雏塔菲喵">
-<meta property="og:description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^{6972593}−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^{7830457}+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
+<meta property="og:description" content="{ % note success % } 如果我们将小于10的所有是3或5倍数的自然数列出来，我们得到3，5，6和9，它们的和是23。与之类似，计算1000以下所有是3或5的倍数的自然数的和。 { % endnote % } python123456def solution():    res &#x3D; 334 * 333 &#x2F; 2 * 3 + 200 * 199 &#x2F; 2 * 5 - 67 * 66 &#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-06T10:20:35.000Z">
-<meta property="article:modified_time" content="2022-09-06T10:33:02.298Z">
+<meta property="article:published_time" content="2022-09-06T11:52:41.000Z">
+<meta property="article:modified_time" content="2022-09-06T12:02:08.819Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>ProjectEuler097 - 关注永雏塔菲喵</title>
+  <title>ProjectEuler001 - 关注永雏塔菲喵</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -216,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ProjectEuler097"></span>
+            <span id="subtitle" data-typed-text="ProjectEuler001"></span>
           
         </div>
 
@@ -227,7 +227,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-06 18:20" pubdate>
+        <time datetime="2022-09-06 19:52" pubdate>
           2022年9月6日 晚上
         </time>
       </span>
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          282 字
+          168 字
         
       </span>
     
@@ -250,7 +250,7 @@
         
         
         
-          3 分钟
+          2 分钟
         
       </span>
     
@@ -296,16 +296,15 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">ProjectEuler097</h1>
+            <h1 style="display: none">ProjectEuler001</h1>
             
             
               <div class="markdown-body">
                 
-                <div class="note note-success">
-            <p>第一个超过一百万位的素数是在1999年被发现的，它是一个具有<spanclass="math inline">\(2^{6972593}−1\)</span>形式的梅森素数，它总共有2,098,960位。之后更多的具有<spanclass="math inline">\(2^p−1\)</span>形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数<spanclass="math inline">\(28433×2^{7830457}+1\)</span>，它共有2,357,207位，求这个素数的最后十位数字。</p>
-          </div>
-<p>手算也可以，套同余的各种定理即可，不过还是Python比较香。
-<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-l1v4tul7q215tv"></i><span>python</span><div class="collapse" id="collapse-l1v4tul7q215tv"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>    res = (<span class="hljs-number">28433</span>*<span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,<span class="hljs-number">7830457</span>,<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)+<span class="hljs-number">1</span>)%(<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)<br>    <span class="hljs-keyword">return</span> res<br></code></pre></td></tr></table></div></figure></p>
+                <p>{ % note success % }
+如果我们将小于10的所有是3或5倍数的自然数列出来，我们得到3，5，6和9，它们的和是23。与之类似，计算1000以下所有是3或5的倍数的自然数的和。
+{ % endnote % }</p>
+<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-icx7h4l7q56cxl"></i><span>python</span><div class="collapse" id="collapse-icx7h4l7q56cxl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>    res = <span class="hljs-number">334</span> * <span class="hljs-number">333</span> / <span class="hljs-number">2</span> * <span class="hljs-number">3</span> + <span class="hljs-number">200</span> * <span class="hljs-number">199</span> / <span class="hljs-number">2</span> * <span class="hljs-number">5</span> - <span class="hljs-number">67</span> * <span class="hljs-number">66</span> / <span class="hljs-number">2</span> * <span class="hljs-number">15</span><br>    <span class="hljs-keyword">return</span> res<br><br><br></code></pre></td></tr></table></div></figure>
 
                 
               </div>
@@ -344,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ProjectEuler097</div>
-      <div>https://zhoutq1998.github.io/2022/09/06/ProjectEuler097/</div>
+      <div>ProjectEuler001</div>
+      <div>https://zhoutq1998.github.io/2022/09/06/ProjectEuler001/</div>
     </div>
     <div class="license-meta">
       
@@ -387,9 +386,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/06/ProjectEuler001/" title="ProjectEuler001">
+                      <a href="/2022/09/06/ProjectEuler002/" title="ProjectEuler002">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ProjectEuler001</span>
+                        <span class="hidden-mobile">ProjectEuler002</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -397,8 +396,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/05/ProjectEuler700/" title="ProjectEuler700">
-                        <span class="hidden-mobile">ProjectEuler700</span>
+                      <a href="/2022/09/06/ProjectEuler097/" title="ProjectEuler097">
+                        <span class="hidden-mobile">ProjectEuler097</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -480,12 +479,6 @@
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -677,40 +670,6 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.1/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
