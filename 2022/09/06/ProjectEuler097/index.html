@@ -16,15 +16,15 @@
   <meta name="author" content="周天麒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^6972593−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^7830457+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
+    <meta name="description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^{6972593}−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^{7830457}+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ProjectEuler097">
 <meta property="og:url" content="https://zhoutq1998.github.io/2022/09/06/ProjectEuler097/index.html">
 <meta property="og:site_name" content="关注永雏塔菲喵">
-<meta property="og:description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^6972593−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^7830457+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
+<meta property="og:description" content="第一个超过一百万位的素数是在1999年被发现的，它是一个具有\(2^{6972593}−1\)形式的梅森素数，它总共有2,098,960位。之后更多的具有\(2^p−1\)形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数\(28433×2^{7830457}+1\)，它共有2,357,207位，求这个素数的最后十位数字。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-06T10:20:35.000Z">
-<meta property="article:modified_time" content="2022-09-06T10:28:16.528Z">
+<meta property="article:modified_time" content="2022-09-06T10:33:02.298Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          278 字
+          282 字
         
       </span>
     
@@ -302,10 +302,10 @@
               <div class="markdown-body">
                 
                 <div class="note note-success">
-            <p>第一个超过一百万位的素数是在1999年被发现的，它是一个具有<spanclass="math inline">\(2^6972593−1\)</span>形式的梅森素数，它总共有2,098,960位。之后更多的具有<spanclass="math inline">\(2^p−1\)</span>形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数<spanclass="math inline">\(28433×2^7830457+1\)</span>，它共有2,357,207位，求这个素数的最后十位数字。</p>
+            <p>第一个超过一百万位的素数是在1999年被发现的，它是一个具有<spanclass="math inline">\(2^{6972593}−1\)</span>形式的梅森素数，它总共有2,098,960位。之后更多的具有<spanclass="math inline">\(2^p−1\)</span>形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数<spanclass="math inline">\(28433×2^{7830457}+1\)</span>，它共有2,357,207位，求这个素数的最后十位数字。</p>
           </div>
 <p>手算也可以，套同余的各种定理即可，不过还是Python比较香。
-<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-w574r4l7q1tmpe"></i><span>python</span><div class="collapse" id="collapse-w574r4l7q1tmpe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>    res = (<span class="hljs-number">28433</span>*<span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,<span class="hljs-number">7830457</span>,<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)+<span class="hljs-number">1</span>)%(<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)<br>    <span class="hljs-keyword">return</span> res<br></code></pre></td></tr></table></div></figure></p>
+<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-l1v4tul7q215tv"></i><span>python</span><div class="collapse" id="collapse-l1v4tul7q215tv"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>    res = (<span class="hljs-number">28433</span>*<span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,<span class="hljs-number">7830457</span>,<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)+<span class="hljs-number">1</span>)%(<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)<br>    <span class="hljs-keyword">return</span> res<br></code></pre></td></tr></table></div></figure></p>
 
                 
               </div>
