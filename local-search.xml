@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ProjectEuler097</title>
+    <link href="/2022/09/06/ProjectEuler097/"/>
+    <url>/2022/09/06/ProjectEuler097/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>第一个超过一百万位的素数是在1999年被发现的，它是一个具有<spanclass="math inline">\(2^6972593−1\)</span>形式的梅森素数，它总共有2,098,960位。之后更多的具有<spanclass="math inline">\(2^p−1\)</span>形式的梅森素数被发现，并表包含更多的位数。然而，2004年人们发现了一个巨大的非梅森素数<spanclass="math inline">\(28433×2^7830457+1\)</span>，它共有2,357,207位，求这个素数的最后十位数字。</p>          </div><figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-l9znetl7q1oy8q"></i><span>python</span><div class="collapse" id="collapse-l9znetl7q1oy8q"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>    res = (<span class="hljs-number">28433</span>*<span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,<span class="hljs-number">7830457</span>,<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)+<span class="hljs-number">1</span>)%(<span class="hljs-number">10</span>**<span class="hljs-number">10</span>)<br>    <span class="hljs-keyword">return</span> res<br></code></pre></td></tr></table></div></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>欧拉计划</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ProjectEuler700</title>
     <link href="/2022/09/05/ProjectEuler700/"/>
     <url>/2022/09/05/ProjectEuler700/</url>
