@@ -16,21 +16,21 @@
   <meta name="author" content="周天麒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="斐波那契序列中的数都是由前两项加总得出，假设第一与第二项为1与2，则前十项分别为：1，2，3，5，8，13，21，34，55，89考虑不超过四百万的斐波那契数，计算其中偶数斐波那契数的和。            python1234567def solution():	a, b &#x3D; 2, 8	res &#x3D; a	while b &lt; 4e6:		res +&#x3D; b		a,">
+    <meta name="description" content="正整数n的有些正倍数在十进制下所有数字均≤ 2，记其中最小的为f(n)。比如f(2)&#x3D;2，f(3)&#x3D;12，f(7)&#x3D;21，f(9)&#x3D;12222，f(10)&#x3D;10，f(42)&#x3D;210，f(89)&#x3D;1121222。此外，已知\(\sum_{n&#x3D;1}^{100}f(n)&#x3D;11363107\) 求\(\sum_{n&#x3D;1}^{10000}f(n)\)            pyth">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ProjectEuler002">
-<meta property="og:url" content="https://zhoutq1998.github.io/2022/09/06/ProjectEuler002/index.html">
+<meta property="og:title" content="ProjectEuler303">
+<meta property="og:url" content="https://zhoutq1998.github.io/2022/09/07/ProjectEuler303/index.html">
 <meta property="og:site_name" content="关注永雏塔菲喵">
-<meta property="og:description" content="斐波那契序列中的数都是由前两项加总得出，假设第一与第二项为1与2，则前十项分别为：1，2，3，5，8，13，21，34，55，89考虑不超过四百万的斐波那契数，计算其中偶数斐波那契数的和。            python1234567def solution():	a, b &#x3D; 2, 8	res &#x3D; a	while b &lt; 4e6:		res +&#x3D; b		a,">
+<meta property="og:description" content="正整数n的有些正倍数在十进制下所有数字均≤ 2，记其中最小的为f(n)。比如f(2)&#x3D;2，f(3)&#x3D;12，f(7)&#x3D;21，f(9)&#x3D;12222，f(10)&#x3D;10，f(42)&#x3D;210，f(89)&#x3D;1121222。此外，已知\(\sum_{n&#x3D;1}^{100}f(n)&#x3D;11363107\) 求\(\sum_{n&#x3D;1}^{10000}f(n)\)            pyth">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-06T12:01:09.000Z">
-<meta property="article:modified_time" content="2022-09-06T12:21:32.957Z">
+<meta property="article:published_time" content="2022-09-07T08:23:09.000Z">
+<meta property="article:modified_time" content="2022-09-07T08:26:21.970Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>ProjectEuler002 - 关注永雏塔菲喵</title>
+  <title>ProjectEuler303 - 关注永雏塔菲喵</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -216,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ProjectEuler002"></span>
+            <span id="subtitle" data-typed-text="ProjectEuler303"></span>
           
         </div>
 
@@ -227,8 +227,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-06 20:01" pubdate>
-          2022年9月6日 晚上
+        <time datetime="2022-09-07 16:23" pubdate>
+          2022年9月7日 下午
         </time>
       </span>
     
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          167 字
+          775 字
         
       </span>
     
@@ -250,7 +250,7 @@
         
         
         
-          2 分钟
+          7 分钟
         
       </span>
     
@@ -296,15 +296,15 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">ProjectEuler002</h1>
+            <h1 style="display: none">ProjectEuler303</h1>
             
             
               <div class="markdown-body">
                 
                 <div class="note note-success">
-            <p>斐波那契序列中的数都是由前两项加总得出，假设第一与第二项为1与2，则前十项分别为：</p><p>1，2，3，5，8，13，21，34，55，89</p><p>考虑不超过四百万的斐波那契数，计算其中偶数斐波那契数的和。</p>
+            <p>正整数n的有些正倍数在十进制下所有数字均≤ 2，记其中最小的为f(n)。</p><p>比如f(2)=2，f(3)=12，f(7)=21，f(9)=12222，f(10)=10，f(42)=210，f(89)=1121222。</p><p>此外，已知<spanclass="math inline">\(\sum_{n=1}^{100}f(n)=11363107\)</span> 求<spanclass="math inline">\(\sum_{n=1}^{10000}f(n)\)</span></p>
           </div>
-<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-s8bpsll7rcwo3p"></i><span>python</span><div class="collapse" id="collapse-s8bpsll7rcwo3p"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br>	a, b = <span class="hljs-number">2</span>, <span class="hljs-number">8</span><br>	res = a<br>	<span class="hljs-keyword">while</span> b &lt; <span class="hljs-number">4e6</span>:<br>		res += b<br>		a, b = b, <span class="hljs-number">4</span> * b + a<br>	<span class="hljs-keyword">return</span> res<br></code></pre></td></tr></table></div></figure>
+<figure class="highlight python"><i class="iconfont icon-github-fill" type="button" data-toggle="collapse" data-target="#collapse-l9o9xul7rcwo3p"></i><span>python</span><div class="collapse" id="collapse-l9o9xul7rcwo3p"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">solution</span>():<br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">cal</span>(<span class="hljs-params">n</span>):<br>        <span class="hljs-comment"># -1 平凡解，0 无解，1有解</span><br>        remain = [[-<span class="hljs-number">1</span>] + [<span class="hljs-number">0</span>] * (n-<span class="hljs-number">1</span>)]<br>        <span class="hljs-comment"># k表示位数</span><br>        k = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">while</span> remain[k][<span class="hljs-number">0</span>] != <span class="hljs-number">1</span>:<br>            next_digit = remain[k][:]<br>            digit_remain = <span class="hljs-built_in">pow</span>(<span class="hljs-number">10</span>, k, n)<br>            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>                <span class="hljs-keyword">if</span> remain[k][i] != <span class="hljs-number">0</span>:<br>                    next_digit[(i + digit_remain) % n] = <span class="hljs-number">1</span><br>                    next_digit[(i + <span class="hljs-number">2</span> * digit_remain) % n] = <span class="hljs-number">1</span><br>            remain.append(next_digit)<br>            k += <span class="hljs-number">1</span><br><br>        <span class="hljs-comment"># 现在证明了k位解的存在性，只需要找到那个解，倒推，目前解模n余0</span><br>        res = <span class="hljs-number">0</span><br>        now_remain = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(k-<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>):<br>            digit_remain = <span class="hljs-built_in">pow</span>(<span class="hljs-number">10</span>, i, n)<br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>((<span class="hljs-number">1</span> <span class="hljs-keyword">if</span> i == k-<span class="hljs-number">1</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>), <span class="hljs-number">3</span>):<br>                new_remain = (now_remain - j * digit_remain) % n<br>                <span class="hljs-keyword">if</span> remain[i][new_remain] != <span class="hljs-number">0</span>:<br>                    res = <span class="hljs-number">10</span> * res + j<br>                    now_remain = new_remain<br>                    <span class="hljs-keyword">break</span><br>        <br>        <span class="hljs-keyword">return</span> res<br>    <br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sum</span>([cal(i) // i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">10001</span>)])<br></code></pre></td></tr></table></div></figure>
 
                 
               </div>
@@ -343,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ProjectEuler002</div>
-      <div>https://zhoutq1998.github.io/2022/09/06/ProjectEuler002/</div>
+      <div>ProjectEuler303</div>
+      <div>https://zhoutq1998.github.io/2022/09/07/ProjectEuler303/</div>
     </div>
     <div class="license-meta">
       
@@ -356,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年9月6日</div>
+          <div>2022年9月7日</div>
         </div>
       
       
@@ -386,18 +386,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/07/ProjectEuler303/" title="ProjectEuler303">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ProjectEuler303</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/06/ProjectEuler001/" title="ProjectEuler001">
-                        <span class="hidden-mobile">ProjectEuler001</span>
+                      <a href="/2022/09/06/ProjectEuler002/" title="ProjectEuler002">
+                        <span class="hidden-mobile">ProjectEuler002</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -479,6 +473,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -670,6 +670,40 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.1/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
