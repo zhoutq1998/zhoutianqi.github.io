@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ProjectEuler006</title>
+    <link href="/2022/09/08/ProjectEuler006/"/>
+    <url>/2022/09/08/ProjectEuler006/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>2520是可以被从一到十所有自然数整除的最小的数，即为从一到十的自然数的最小公倍数，求从一到二十所有自然数的最小公倍数。</p>          </div><p><span class="math display">\[(\frac{n^2+n}{2})^2 - \frac{n(n+1)(2n+1)}{6}\]</span></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>欧拉计划</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ProjectEuler005</title>
     <link href="/2022/09/08/ProjectEuler005/"/>
     <url>/2022/09/08/ProjectEuler005/</url>
