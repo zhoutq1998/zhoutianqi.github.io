@@ -24,7 +24,7 @@
 <meta property="og:description" content="2520是可以被从一到十所有自然数整除的最小的数，即为从一到十的自然数的最小公倍数，求从一到二十所有自然数的最小公倍数。            \[ (\frac{n^2+n}{2})^2 - \frac{n(n+1)(2n+1)}{6} \]">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-08T12:26:35.000Z">
-<meta property="article:modified_time" content="2022-09-08T12:46:04.595Z">
+<meta property="article:modified_time" content="2022-09-08T12:49:47.446Z">
 <meta property="article:author" content="周天麒">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -477,6 +477,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -666,6 +672,40 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.1/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/leancloud.js" ></script>
 
