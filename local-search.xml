@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ProjectEuler005</title>
+    <link href="/2022/09/08/ProjectEuler005/"/>
+    <url>/2022/09/08/ProjectEuler005/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>2520是可以被从一到十所有自然数整除的最小的数，即为从一到十的自然数的最小公倍数，求从一到二十所有自然数的最小公倍数。</p>          </div><p>16*9*5*7*11*13*17*19</p><p>对于求从1到<spanclass="math inline">\(n\)</span>所有自然数的最小公倍数，只需要看其中每个质数的最大次幂。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>欧拉计划</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ProjectEuler004</title>
     <link href="/2022/09/08/ProjectEuler004/"/>
     <url>/2022/09/08/ProjectEuler004/</url>
