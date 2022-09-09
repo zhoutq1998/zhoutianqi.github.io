@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ProjectEuler009</title>
+    <link href="/2022/09/09/ProjectEuler009/"/>
+    <url>/2022/09/09/ProjectEuler009/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>毕达哥拉斯三元数是指一类三个自然数的集合，其中<spanclass="math inline">\(a\le b\le c\)</span>且<spanclass="math inline">\(a^2+b^2=c^2\)</span>，例如<spanclass="math inline">\(32+42=52\)</span>。仅存在一组毕达哥拉斯三元数使得<spanclass="math inline">\(a+b+c=1000\)</span>，求<spanclass="math inline">\(abc\)</span>。</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>欧拉计划</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ProjectEuler008</title>
     <link href="/2022/09/09/ProjectEuler008/"/>
     <url>/2022/09/09/ProjectEuler008/</url>
